@@ -52,122 +52,98 @@
 		<div class= "card-body category1">
 			
 				<p class="question">Are you okay?</p>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question1" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
+		</div>
+		<div class= "card-body category1">
+			
+				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question1" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question1" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question2" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question2" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question3" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question3" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question3" value="No">
-		  		<label for="no">No</label>
-			
-		</div>
-		<div class= "card-body category1">
-			
-				<p class="card-text">Are you good?</p>
-				
-				<input type="radio" id="yes" name="question4" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question4" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question4" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question5" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question5" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question5" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question6" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question6" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question6" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question7" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question7" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question7" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question8" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question8" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question8" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question9" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question9" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question9" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question10" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question10" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question10" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question11" value="Yes">
-		  		<label for="yes">Yes</label>
-
-				<input type="radio" id="no" name="question11" value="No">
-		  		<label for="no">No</label>
+				<label for="no">Completely disagree</label>
+				<input type="range" name="question11" class="form-range" step="25">
+				<label for="yes">Completely agree</label>
 			
 		</div>
 		</form>	

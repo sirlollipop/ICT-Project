@@ -11,6 +11,24 @@
         padding-top: 100px;
         padding-bottom: 100px;
     }
+	
+	.category1{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:lightblue;
+	}
+	
+	.category2{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:lightgreen;
+	}
+	
+	.category3{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:orange;
+	}
 	</style>
 </head>
 <body>
@@ -31,7 +49,7 @@
 	
 		<div class="card">
 		<form action="#">
-		<div class= "card-body">
+		<div class= "card-body category1">
 			
 				<p class="question">Are you okay?</p>
 				
@@ -42,7 +60,7 @@
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category1">
 			
 				<p class="card-text">Are you good?</p>
 				
@@ -53,102 +71,102 @@
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category1">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question3" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question3" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category1">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question4" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question4" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question5" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question5" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question6" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question6" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question7" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question7" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category2">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question8" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question8" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question9" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question9" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question10" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question10" value="No">
 		  		<label for="no">No</label>
 			
 		</div>
-		<div class= "card-body">
+		<div class= "card-body category3">
 			
 				<p class="card-text">Are you good?</p>
 				
-				<input type="radio" id="yes" name="question2" value="Yes">
+				<input type="radio" id="yes" name="question11" value="Yes">
 		  		<label for="yes">Yes</label>
 
-				<input type="radio" id="no" name="question2" value="No">
+				<input type="radio" id="no" name="question11" value="No">
 		  		<label for="no">No</label>
 			
 		</div>

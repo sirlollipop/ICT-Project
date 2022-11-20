@@ -1,0 +1,23 @@
+    body{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+	
+	.category1{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:lightblue;
+	}
+	
+	.category2{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:lightgreen;
+	}
+	
+	.category3{
+		border-radius: 20px;
+		border-style:solid;
+		border-color:orange;
+	}
+	

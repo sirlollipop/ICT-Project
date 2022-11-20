@@ -27,6 +27,10 @@
 	</nav>
 	
 	<div class="container">
+		
+		<div class="progress" style="background-color:lightgray !important;">
+			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+		</div>
 	
 		<div class="card">
 		<form action="#">

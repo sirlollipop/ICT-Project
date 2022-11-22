@@ -30,8 +30,9 @@ $_SESSION["Score2"] = 60;
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
-	<nav class="navbar fixed-bottom navbar-dark bg-primary">
+	<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-between">
 	 <a class="navbar-brand" href="#"><img src="logosbeneficaireserasmusleft_en_0.jpg" width="200" class="d-inline-block align-top" alt=""></a>
+	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
 	</nav>
 	
 	<div class="container">

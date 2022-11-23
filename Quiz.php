@@ -28,20 +28,25 @@
 	
 	<div class="container">
 	
-		<div class="card">
+		<div class="card text-center border-0">
 		<form action="#">
+		<h5 class="card-header border-0">Substance</h5>
 		<div class= "card-body category1">
 			
-				<p class="question">I systematically acquire information about the changes taking place in my professional field</p>
-				<label for="no">Completely disagree</label>
-				<input type="range" name="question1" class="form-range" step="25">
-				<label for="yes">Completely agree</label>
+			<p class="card-text">I systematically acquire information about the changes taking place in my professional field</p>	
+			<label for="no">Completely disagree</label>
+			<br class='d-md-none'/>
+			<input type="range" name="question1" class="form-range" min="1" max="4" value="0">
+			<br class='d-md-none'/>
+			<label for="yes">Completely agree</label>
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">I take into account the feedback I receive in guiding learning in the workplace</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question2" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question2" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -49,7 +54,9 @@
 			
 				<p class="card-text">I have a comprehensive knowledge of the skills needs of my profession</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question3" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question3" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -57,7 +64,9 @@
 			
 				<p class="card-text">I am well aware of the future of my profession and the skills that will be associated with it in the future</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question4" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question4" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -65,7 +74,9 @@
 			
 				<p class="card-text">My own role as a learning ambassador is clear to me</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question5" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question5" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -73,7 +84,9 @@
 			
 				<p class="card-text">I can evaluate and reflect on my own supervision</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question6" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question6" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -81,7 +94,9 @@
 			
 				<p class="card-text">I can evaluate a student's professional (substantive) skills and so-called soft skills as well</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question7" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question7" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -89,7 +104,9 @@
 			
 				<p class="card-text">I regularly update my own competence development plan</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question8" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question8" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -97,15 +114,20 @@
 			
 				<p class="card-text">I regularly discuss with my supervisor about developing my own skills</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question9" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question9" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>
 		<div class= "card-body category3">
 			
 				<p class="card-text">I collaborate with workplaces in a way that develops my ability to act as a Learning Ambassador</p>
+				
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question10" class="form-range" step="25">
+				<br class='d-md-none'/>
+				<input type="range" name="question10" class="form-range" min="1" max="4" value="0">
+				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 			
 		</div>

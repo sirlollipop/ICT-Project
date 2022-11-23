@@ -29,7 +29,7 @@
 	<div class="container">
 	
 		<div class="card">
-		<form action="#">
+		<form action="#" id="form">
 		<div class= "card-body category1">
 			
 				<p class="question">I know the competence needs of companies in my field in my area of operation</p>
@@ -114,6 +114,7 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModal" aria-hidden="true">

@@ -34,14 +34,14 @@
 			
 				<p class="question">I know the competence needs of companies in my field in my area of operation</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question1" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">I know what companies expect from working with educational institutions</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question2" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -49,7 +49,7 @@
 			
 				<p class="card-text">I know which companies offer quality on-the-job training places</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question3" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -57,7 +57,7 @@
 			
 				<p class="card-text">I have a system for mapping new on-the-job learning places</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question4" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -65,7 +65,7 @@
 			
 				<p class="card-text">I can encourage jobs to see students as the future and to see the importance of workplace learning for the company</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question5" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -73,7 +73,7 @@
 			
 				<p class="card-text">I seek to find new ways to guide learning in the workplace and to include it in the discussion in the workplace</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question6" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -81,7 +81,7 @@
 			
 				<p class="card-text">I know where my students who have graduated in the last three years are working or studying</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question7" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -89,7 +89,7 @@
 			
 				<p class="card-text">I take into account the requirements of the world of work for each student</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question8" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -97,7 +97,7 @@
 			
 				<p class="card-text">I create goals for on-the-job learning together with the student</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question9" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -105,7 +105,7 @@
 			
 				<p class="card-text">I am well qualified to train workplace trainers</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question10" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>	
@@ -140,6 +140,6 @@
 		</form>	
 		</div>
 	</div>
-
+	<script src="calculator.js"></script>
 </body>
 </html>

@@ -1,6 +1,7 @@
-var numericalValues = new Range();
-numericalValues["25"]= 1;
-numericalValues["50"]= 2;
+var numericalValues = new Array();
+numericalValues["0"]= 1;
+numericalValues["25"]= 2;
+numericalValues["50"]= 0;
 numericalValues["75"]= 3;
 numericalValues["100"]= 4;
 
@@ -10,42 +11,23 @@ function getScore()
 {
 var quizScore = 0;
 var form = document.forms["form"];
-var question = form.elements["question1"];
+var question = form.elements["quiz"];
 for(var i=0; i<question.length; i++)
 {
-
-
-    quizScore = numericalValues[question[i].value];
-    console.log(quizScore)
-    break;
-    
-
+    quizScore += numericalValues[question[i].value];
 }
+
 return quizScore;
 };
 
-function getScore2()
-{
-var quizScore2 = 0;
-var form = document.forms["form"];
-var question2 = form.elements["question2"];
-for(var i=0; i<question2.length; i++)
-{
-  if(question2[i].checked)
-  {
-  quizScore2 = numericalValues[question2[i].value];
-  break;
-  }
 
-}
-return quizScore2;
-};
+
 
 
 function getTotal()
 {
 
-var totalScore = getScore() + getScore2();
+var totalScore = getScore();
 
 
 document.getElementById('result').innerHTML =

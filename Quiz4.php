@@ -34,7 +34,7 @@
 		</div>
 	
 		<div class="card">
-		<form action="#">
+		<form name="form" action="#">
 		<div class= "card-body category1">
 			
 				<p class="question">I regularly discuss about student guidance with my colleagues</p>
@@ -116,7 +116,7 @@
 		</div>
 <!-- Button trigger modal -->
 <div class="text-right">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
+<button type="button" id="calculate" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
 
@@ -125,7 +125,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="submitModal">Your points</h5>
+	  <h5 class="modal-title" id="result">Your points</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

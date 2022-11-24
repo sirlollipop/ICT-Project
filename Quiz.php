@@ -34,19 +34,19 @@
 		</div>
 	
 		<div class="card">
-		<form action="#">
+		<form name="form" action="#">
 		<div class= "card-body category1">
 			
 				<p class="question">I systematically acquire information about the changes taking place in my professional field</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question1" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">I take into account the feedback I receive in guiding learning in the workplace</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question2" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -54,7 +54,7 @@
 			
 				<p class="card-text">I have a comprehensive knowledge of the skills needs of my profession</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question3" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -62,7 +62,7 @@
 			
 				<p class="card-text">I am well aware of the future of my profession and the skills that will be associated with it in the future</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question4" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -70,7 +70,7 @@
 			
 				<p class="card-text">My own role as a learning ambassador is clear to me</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question5" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -78,7 +78,7 @@
 			
 				<p class="card-text">I can evaluate and reflect on my own supervision</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question6" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -86,7 +86,7 @@
 			
 				<p class="card-text">I can evaluate a student's professional (substantive) skills and so-called soft skills as well</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question7" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -94,7 +94,7 @@
 			
 				<p class="card-text">I regularly update my own competence development plan</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question8" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -102,7 +102,7 @@
 			
 				<p class="card-text">I regularly discuss with my supervisor about developing my own skills</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question9" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -110,13 +110,13 @@
 			
 				<p class="card-text">I collaborate with workplaces in a way that develops my ability to act as a Learning Ambassador</p>
 				<label for="no">Completely disagree</label>
-				<input type="range" name="question10" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<label for="yes">Completely agree</label>
 			
 		</div>
 <!-- Button trigger modal -->
 <div class="text-right">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
+<button type="button" id="calculate" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
 
@@ -125,7 +125,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="submitModal">Your points</h5>
+        <h5 class="modal-title" id="result">Your points</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -145,6 +145,6 @@
 </form>
 </div>
 </div>
-
+<script src="calculator.js"></script>
 </body>
 </html>

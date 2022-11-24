@@ -22,11 +22,16 @@
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
-	<nav class="navbar fixed-bottom navbar-dark bg-primary">
+	<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-between">
 	 <a class="navbar-brand" href="#"><img src="logosbeneficaireserasmusleft_en_0.jpg" width="200" class="d-inline-block align-top" alt=""></a>
+	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
 	</nav>
 	
 	<div class="container">
+	
+		<div class="progress" style="background-color:lightgray !important;">
+			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+		</div>
 	
 		<div class="card">
 		<form action="#">
@@ -129,7 +134,7 @@
         placeholder
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="#" role="button">Chart</a>
+	  	<a class="btn btn-primary" href="End.php" role="button">Chart</a>
       </div>
     </div>
   </div>

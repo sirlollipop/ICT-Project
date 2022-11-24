@@ -22,19 +22,25 @@
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
-	<nav class="navbar fixed-bottom navbar-dark bg-primary">
+	<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-between">
 	 <a class="navbar-brand" href="#"><img src="logosbeneficaireserasmusleft_en_0.jpg" width="200" class="d-inline-block align-top" alt=""></a>
+	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
 	</nav>
 	
 	<div class="container">
+
+		<div class="progress" style="background-color:lightgray !important;">
+			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 25%"></div>
+		</div>
 	
 		<div class="card text-center border-0">
-		<form action="#">
-		<h5 class="card-header border-0">Future skill needs and learning possibilities in companies</h5>
+		<form action="#" id="form">
+    <h5 class="card-header border-0">Future skill needs and learning possibilities in companies</h5>
 		<div class= "card-body category1">
 			
 				<p class="card-text">I know the competence needs of companies in my field in my area of operation</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question1" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
@@ -44,9 +50,11 @@
 			
 				<p class="card-text">I know what companies expect from working with educational institutions</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question2" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -54,9 +62,11 @@
 			
 				<p class="card-text">I know which companies offer quality on-the-job training places</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question3" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -64,9 +74,11 @@
 			
 				<p class="card-text">I have a system for mapping new on-the-job learning places</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question4" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -77,6 +89,7 @@
 				<br class='d-md-none'/>
 				<input type="range" name="question5" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -87,6 +100,7 @@
 				<br class='d-md-none'/>
 				<input type="range" name="question6" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -94,9 +108,11 @@
 			
 				<p class="card-text">I know where my students who have graduated in the last three years are working or studying</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question7" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -104,9 +120,11 @@
 			
 				<p class="card-text">I take into account the requirements of the world of work for each student</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question8" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -114,9 +132,11 @@
 			
 				<p class="card-text">I create goals for on-the-job learning together with the student</p>
 				<label for="no">Completely disagree</label>
+
 				<br class='d-md-none'/>
 				<input type="range" name="question9" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>
@@ -127,6 +147,7 @@
 				<br class='d-md-none'/>
 				<input type="range" name="question10" class="form-range" min="1" max="4" value="0">
 				<br class='d-md-none'/>
+
 				<label for="yes">Completely agree</label>
 			
 		</div>	
@@ -135,6 +156,7 @@
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
+
 
 <!-- Modal -->
 <div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="submitModal" aria-hidden="true">
@@ -160,6 +182,6 @@
 		</form>	
 		</div>
 	</div>
-
+	<script src="calculator.js"></script>
 </body>
 </html>

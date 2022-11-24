@@ -34,10 +34,12 @@
 			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
 		</div>
 	
+
 		<div class="card text-center border-0">
 
-		<form action="#">
+		<form name="form" action="#">
 		<h5 class="card-header border-0">Studification and development of skills</h5>
+
 		<div class= "card-body category1">
 			
 				<p class="card-text">I keep myself up to date about the development of the curriculum concerning my substance</p>
@@ -159,7 +161,7 @@
 		</div>	
 <!-- Button trigger modal -->
 <div class="text-right">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
+<button type="button" id="calculate" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
 
@@ -169,7 +171,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="submitModal">Your points</h5>
+	  <h5 class="modal-title" id="result">Your points</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

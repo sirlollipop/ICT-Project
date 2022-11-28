@@ -3,8 +3,7 @@
 session_start();
 ?>
 <?php
-$_SESSION["Score1"] = 40;
-$_SESSION["Score2"] = 50;
+
 ?>
 <?php
 $servername = "localhost";
@@ -22,7 +21,10 @@ $sql = "SELECT id, score1, score2 FROM test_table";
 $result =mysqli_query($conn, $sql);
 
 $user_num = "SELECT MAX(id) FROM test_table";
-$user_result = mysqli_query($conn, $user_num);
+$user_result =mysqli_query($conn, $user_num);
+
+$avg_xy = "SELECT AVG(score1), AVG(score2) FROM test_table";
+$avg_result =mysqli_query($conn, $avg_xy);
 
 
 
@@ -33,20 +35,28 @@ $user_result = mysqli_query($conn, $user_num);
 if ($result->num_rows > 0) {
   
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - X: " . $row["score1"]. " Y: " . $row["score2"]. "<br>";
+    //echo "id: " . $row["id"]. " - X: " . $row["score1"]. " Y: " . $row["score2"]. "<br>";
   }
+  while($row = $user_result->fetch_assoc()) {
+	
+    echo "This quiz has been answered " . $row['MAX(id)']. " times";
+    }
 } else {
   echo "0 results";
 }
 
+while($row = $avg_result->fetch_assoc()) {
+ // echo "Average score: "  . $row["AVG(score1)"]. " , " .$row["AVG(score2)"]. "<br>";
 
 
+$_SESSION["Score1"] = $row["AVG(score1)"];
+$_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+
+}
   
-   while($row1 = $user_result->fetch_assoc()) {
-	$id_num = $row1["id"];
-	 echo "This quiz has been answered " . $id_num . " times";
-   }
-  
+
+ 
   
   
  
@@ -104,11 +114,7 @@ $conn->close();
                 <p>Teacher who have long career from working in school</p>
             </div>
         </div>
-		<?php
-		$users = 60;
 		
-		print "This quiz has been answered " . $users . " times";
-		?>
 	</div>
 	
 	<script>

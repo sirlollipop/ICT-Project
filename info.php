@@ -6,24 +6,21 @@ session_start();
 
 ?>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "testdb";
+include("config.php");
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = $db;
 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, score1, score2 FROM test_table";	
+$sql = "SELECT quizid, score FROM category1";	
 $result =mysqli_query($conn, $sql);
 
-$user_num = "SELECT MAX(id) FROM test_table";
+$user_num = "SELECT MAX(quizid) FROM category1";
 $user_result =mysqli_query($conn, $user_num);
 
-$avg_xy = "SELECT AVG(score1), AVG(score2) FROM test_table";
+$avg_xy = "SELECT AVG(score) FROM category1";
 $avg_result =mysqli_query($conn, $avg_xy);
 
 

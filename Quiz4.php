@@ -46,7 +46,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question1" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -56,7 +56,7 @@
 				<p class="card-text">The career guidance I do is based on the educational guidance plan of the educational institution</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="question2" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -68,7 +68,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question3" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -79,7 +79,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question4" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -91,7 +91,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question5" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -103,7 +103,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question6" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -115,7 +115,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question7" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -127,7 +127,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question8" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -139,7 +139,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question9" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -151,7 +151,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question10" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>

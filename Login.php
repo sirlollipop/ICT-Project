@@ -1,6 +1,9 @@
 <?php
 	include("config.php");
    session_start();
+   if (!empty($_SESSION["myusername"])) {
+		header("location: welcome.php");
+	}
    $error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 	// username and password sent from form 

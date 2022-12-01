@@ -62,7 +62,7 @@
 				<lable for="checkbox2"> Does not concern </label>
 				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category1">
+		<div class= "card-body category2">
 			
 				<p class="card-text">I have a comprehensive knowledge of the skills needs of my profession</p>
 				<label for="no">Completely disagree</label>
@@ -90,7 +90,7 @@
 				<lable for="checkbox4"> Does not concern </label>
 				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">My own role as a learning ambassador is clear to me</p>
 				<label for="no">Completely disagree</label>
@@ -104,7 +104,7 @@
 				<lable for="checkbox5"> Does not concern </label>
 				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I can evaluate and reflect on my own supervision</p>
 				<label for="no">Completely disagree</label>
@@ -118,7 +118,7 @@
 				<lable for="checkbox6"> Does not concern </label>
 				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I can evaluate a student's professional (substantive) skills and so-called soft skills as well</p>
 				<label for="no">Completely disagree</label>
@@ -132,7 +132,7 @@
 				<lable for="checkbox7"> Does not concern </label>
 				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I regularly update my own competence development plan</p>
 				<label for="no">Completely disagree</label>
@@ -146,7 +146,7 @@
 				<lable for="checkbox8"> Does not concern </label>
 				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I regularly discuss with my supervisor about developing my own skills</p>
 				<label for="no">Completely disagree</label>
@@ -158,7 +158,7 @@
 				<lable for="checkbox9"> Does not concern </label>
 				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I collaborate with workplaces in a way that develops my ability to act as a Learning Ambassador</p>
 				

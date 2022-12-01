@@ -67,7 +67,7 @@
 				<lable for="checkbox2"> Does not concern </label>
 				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category1">
+		<div class= "card-body category2">
 			
 				<p class="card-text">I recognize a student’s learning difficulties and know how to take them into account</p>
 				<label for="no">Completely disagree</label>
@@ -95,7 +95,7 @@
 				<lable for="checkbox4"> Does not concern </label>
 				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I know what kind of feedback students have given about the career guidance they have received during their studies</p>
 				<label for="no">Completely disagree</label>
@@ -109,7 +109,7 @@
 				<lable for="checkbox5"> Does not concern </label>
 				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I can guide my colleagues and workplace trainers in working with a student</p>
 				<label for="no">Completely disagree</label>
@@ -123,7 +123,7 @@
 				<lable for="checkbox6"> Does not concern </label>
 				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I encourage students to communicate their career goals to workplace trainers</p>
 				<label for="no">Completely disagree</label>
@@ -137,7 +137,7 @@
 				<lable for="checkbox7"> Does not concern </label>
 				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I know the ethical principles of guidance and I act according to them</p>
 				<label for="no">Completely disagree</label>
@@ -151,7 +151,7 @@
 				<lable for="checkbox8"> Does not concern </label>
 				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I have a clear plan for maintaining and developing my guidance skills</p>
 				<label for="no">Completely disagree</label>
@@ -165,7 +165,7 @@
 				<lable for="checkbox9"> Does not concern </label>
 				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I regularly organize career guidance for my students</p>
 				<label for="no">Completely disagree</label>

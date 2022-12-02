@@ -68,7 +68,7 @@
 				<lable for="checkbox2"> Does not concern </label>
 				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category1">
+		<div class= "card-body category2">
 			
 				<p class="card-text">I recognize the strengths and weaknesses of my student in different learning environments</p>
 				<label for="no">Completely disagree</label>
@@ -96,7 +96,7 @@
 				<lable for="checkbox4"> Does not concern </label>
 				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I co-operate with workplace instructors systematically to recognize the critical parts of their workflow concerning given students learning goals</p>
 				<label for="no">Completely disagree</label>
@@ -110,7 +110,7 @@
 				<lable for="checkbox5"> Does not concern </label>
 				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I have discussions regularly in my on-the-job-training network about the studification of work processes</p>
 				<label for="no">Completely disagree</label>
@@ -124,7 +124,7 @@
 				<lable for="checkbox6"> Does not concern </label>
 				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I have the ways and means to support my students' decision-making when planning on-the-job training as a part of one’s education path</p>
 				<label for="no">Completely disagree</label>
@@ -138,7 +138,7 @@
 				<lable for="checkbox7"> Does not concern </label>
 				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I actively discuss with my students about the future requirements of different jobs and substances so that they understand the meaning of on-the-job training for their career</p>
 				<label for="no">Completely disagree</label>
@@ -152,7 +152,7 @@
 				<lable for="checkbox8"> Does not concern </label>
 				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I have regular discussions with my students during on-the-job training about the contents of training and how it matches their studies</p>
 				<label for="no">Completely disagree</label>
@@ -166,7 +166,7 @@
 				<lable for="checkbox9"> Does not concern </label>
 				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I understand the value of individual learning path for my student’s workplace learning and make sure that it works also in on-the-job training</p>
 				<label for="no">Completely disagree</label>

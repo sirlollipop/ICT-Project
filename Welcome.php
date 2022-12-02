@@ -3,9 +3,9 @@
 session_start();
 ?>
 <?php
-
-?>
-<?php
+if (empty($_SESSION["myusername"])) {
+    header("location: login.php");
+}
 include("config.php");
 
 $conn = $db;
@@ -13,6 +13,10 @@ $conn = $db;
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+
+
+
+
 
 $sql = "SELECT quizid, score1 FROM category1";	
 $result =mysqli_query($conn, $sql);
@@ -81,7 +85,9 @@ $conn->close();
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
 	<nav class="navbar fixed-bottom navbar-dark bg-primary">
 	 <a class="navbar-brand" href="#"><img src="logosbeneficaireserasmusleft_en_0.jpg" width="200" class="d-inline-block align-top" alt=""></a>
+	 <a id="loginlink" href="Logout.php" style="color:black;">Logout</a>
 	</nav>
+	
 	<div class="container">
 	  <div class="col-12 d-flex justify-content-center">
             <h2>Average results</h2>

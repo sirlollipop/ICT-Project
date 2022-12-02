@@ -79,16 +79,55 @@ $_SESSION["Score2"] = 60;
                 },
                 options: {
                     responsive: true,
+                    elements:{
+                        line: {
+                        backgroundColor: "red",
+                        borderWidth: 4,
+                    },
+                    },
                     scales: {
                 y: {
+                    ticks: {
+                        display: false,
+                    },
+                    grid: {
+                        color: (context) => {
+                            if(context.tick.value == 0){
+                                return "black";
+                            }
+                            else{
+                                return "rgb(179, 179, 179)";
+                            }
+                        }
+                        
+                        
+                    },
+ 
                     position:"center",
-                    min: -100,
+                    min: 0,
                     max: 100,
+                    
                     },
                 x: {
-                    position:"center",
+                    ticks: {
+                        display: false,
+                    },
+                    grid: {
+                        color: (context) => {
+                            if(context.tick.value == 0){
+                                return "black";
+                            }
+                            else{
+                                return "rgb(102, 204, 255)";
+                            }
+                        }
+                        
+                        
+                    },
+                    
                     min: -100,
                     max: 100,
+                    
                     }
                 }
                 

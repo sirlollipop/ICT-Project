@@ -1,10 +1,63 @@
+
 <?php
 session_start();
 ?>
 <?php
-// Set session variables
-$_SESSION["Score1"] = 20;
-$_SESSION["Score2"] = 60;
+if (empty($_SESSION["myusername"])) {
+    header("location: login.php");
+}
+include("config.php");
+
+$conn = $db;
+
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+
+
+
+
+$sql = "SELECT quizid, score1 FROM category1";	
+$result =mysqli_query($conn, $sql);
+
+$user_num = "SELECT MAX(quizid) FROM category1";
+$user_result =mysqli_query($conn, $user_num);
+
+$avg_xy = "SELECT AVG(score1), AVG(score2) FROM category1";
+$avg_result =mysqli_query($conn, $avg_xy);
+
+if ($result->num_rows > 0) {
+  
+  while($row = $result->fetch_assoc()) {
+    //echo "id: " . $row["id"]. " - X: " . $row["score1"]. " Y: " . $row["score2"]. "<br>";
+  }
+  while($row = $user_result->fetch_assoc()) {
+	
+    echo "This quiz has been answered " . $row['MAX(quizid)']. " times";
+    }
+} else {
+  echo "0 results";
+}
+
+while($row = $avg_result->fetch_assoc()) {
+ //echo "Average score: "  . $row["AVG(score)"];
+
+
+$_SESSION["Score1"] = $row["AVG(score1)"];
+$_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+
+}
+  
+
+ 
+  
+  
+ 
+
+
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -18,34 +71,26 @@ $_SESSION["Score2"] = 60;
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<title>Quiz</title>
 	
 </head>
-
 <body>
+
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
-	<nav class="navbar fixed-bottom navbar-dark bg-primary justify-content-between">
+	<nav class="navbar fixed-bottom navbar-dark bg-primary">
 	 <a class="navbar-brand" href="#"><img src="logosbeneficaireserasmusleft_en_0.jpg" width="200" class="d-inline-block align-top" alt=""></a>
-	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
+	 <a id="loginlink" href="Logout.php" style="color:black;">Logout</a>
 	</nav>
 	
 	<div class="container">
-	
-		<div class="progress" style="background-color:lightgray !important;">
-			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-		</div>
-	
-        <div class="col-12 d-flex justify-content-center">
-            <h2>Result</h2>
-        </div>
-        <div class="col-12 d-flex justify-content-center">
-            <p>Place holder for text which tells user that can he or she go forward to learning ambassador test</p>
+	  <div class="col-12 d-flex justify-content-center">
+            <h2>Average results</h2>
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
@@ -66,18 +111,21 @@ $_SESSION["Score2"] = 60;
                 <p>Teacher who have long career from working in school</p>
             </div>
         </div>
+		
 	</div>
-    <script>
+	
+	<script>
         const ctx = document.getElementById('myChart');
         let numero1 = '<?php echo $_SESSION['Score1']; ?>';
         let numero2 = '<?php echo $_SESSION['Score2']; ?>';
+		
 
 
             new Chart(ctx, {
                 type: 'scatter',
                 data: {
                 datasets: [{
-                    label: 'Result',
+                    label: 'Average placement of users',
                     data: [{x: numero1, y: numero2}],
                     backgroundColor: 'rgb(255, 99, 132)'
                     
@@ -85,55 +133,16 @@ $_SESSION["Score2"] = 60;
                 },
                 options: {
                     responsive: true,
-                    elements:{
-                        line: {
-                        backgroundColor: "red",
-                        borderWidth: 4,
-                    },
-                    },
                     scales: {
                 y: {
-                    ticks: {
-                        display: false,
-                    },
-                    grid: {
-                        color: (context) => {
-                            if(context.tick.value == 0){
-                                return "black";
-                            }
-                            else{
-                                return "rgb(179, 179, 179)";
-                            }
-                        }
-                        
-                        
-                    },
- 
                     position:"center",
-                    min: 0,
-                    max: 100,
-                    
-                    },
-                x: {
-                    ticks: {
-                        display: false,
-                    },
-                    grid: {
-                        color: (context) => {
-                            if(context.tick.value == 0){
-                                return "black";
-                            }
-                            else{
-                                return "rgb(102, 204, 255)";
-                            }
-                        }
-                        
-                        
-                    },
-                    
                     min: -100,
                     max: 100,
-                    
+                    },
+                x: {
+                    position:"center",
+                    min: -100,
+                    max: 100,
                     }
                 }
                 
@@ -141,5 +150,8 @@ $_SESSION["Score2"] = 60;
             }
             );
 </script>
+
+
+
 </body>
 </html>

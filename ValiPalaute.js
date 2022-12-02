@@ -1,33 +1,7 @@
-var numericalValues = new Array();
-var SessioSave = new Array();
-numericalValues["0"]= 1;
-numericalValues["33.33"]= 2;
-numericalValues["66.66"]= 3;
-numericalValues["99.99"]= 4;
+let valiPalauteLaskenta = function(result)
 
-
-
-function getScore()
 {
-var quizScore = 0;
-var form = document.forms["form"];
-var question = form.elements["quiz"];
-
-
-for(var i=0; i<question.length; i++)
-{
-    SessioSave.push(question[i].value);
-    quizScore += numericalValues[question[i].value];
-}
-sessionStorage.setItem("quiz", SessioSave);
-console.log(sessionStorage.getItem("quiz"));
-
-return quizScore;
-};
- 
-function valiPalaute()
-{
-    var number = (sessionStorage.getItem("quiz"))
+    var number = (result)
     var palaute = ''
 
     if (number <=40) {
@@ -37,19 +11,13 @@ function valiPalaute()
     } else if (number <=24){
             palaute = 'I need more skills for individual career guidance. I find out about building individual career paths and how I promote my students ’career planning skills individually.  I find out what kind of career planning skills each of my student’s needs. '
         }
+        console.log(number);
+        console.log(palaute);
         document.getElementById('valiPalaute').innerHTML =
-        "Feedback: "+ palaute;
-};
+                "Feedback: "+ palaute;
 
 
-function getTotal()
-{
-valiPalauteLaskenta();
-var totalScore = getScore();
 
-document.getElementById('result').innerHTML =
-                              "Your total score is: "+totalScore;                           
 
 }
-
-document.getElementById('calculate').onclick=getTotal;
+document.getElementById('calculate').onclick=valiPalauteLaskenta; 

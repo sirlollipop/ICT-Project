@@ -42,7 +42,7 @@
 			<p class="card-text">I systematically acquire information about the changes taking place in my professional field</p>	
 			<label for="no">Completely disagree</label>
 			<br class='d-md-none'/>
-			<input type="range" name="quiz" class="form-range" step="25">
+			<input type="range" name="quiz" class="form-range" step="33.33">
 			<br class='d-md-none'/>
 			<label for="yes">Completely agree</label>
 			<br>
@@ -54,7 +54,7 @@
 				<p class="card-text">I take into account the feedback I receive in guiding learning in the workplace</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -68,7 +68,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -82,7 +82,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -96,7 +96,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -110,7 +110,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -124,7 +124,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -138,7 +138,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -151,7 +151,7 @@
 				<p class="card-text">I regularly discuss with my supervisor about developing my own skills</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="25">
+				<input type="range" name="quiz" class="form-range" step="33.33">
 				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 				<br>
@@ -165,7 +165,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -190,7 +190,7 @@
         </button>
       </div>
       <div class="modal-body">
-        placeholder
+	  <h5 class="modal-title" id="valiPalaute">feedback:</h5>
       </div>
       <div class="modal-footer">
 	  	<a class="btn btn-primary" href="quiz2.php" role="button">Next Page</a>
@@ -205,5 +205,6 @@
 </div>
 </div>
 <script src="calculator.js"></script>
+<script src="ValiPalaute.js"></script>
 </body>
 </html>

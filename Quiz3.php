@@ -201,7 +201,7 @@
         placeholder
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz4.php" role="button">Next Page</a>
+	  	<a class="btn btn-primary" href="Quiz4.php" role="button">Next Page</a>
       </div>
     </div>
   </div>

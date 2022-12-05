@@ -4,7 +4,7 @@ session_start();
 ?>
 <?php
 if (empty($_SESSION["myusername"])) {
-    header("location: login.php");
+    header("location: Login.php");
 }
 include("config.php");
 
@@ -67,7 +67,7 @@ $conn->close();
 
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="Quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->

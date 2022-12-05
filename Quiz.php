@@ -193,7 +193,7 @@
 	  <h5 class="modal-title" id="valiPalaute">feedback:</h5>
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz2.php" role="button">Next Page</a>
+	  	<a class="btn btn-primary" href="Quiz2.php" role="button">Next Page</a>
       </div>
     </div>
   </div>

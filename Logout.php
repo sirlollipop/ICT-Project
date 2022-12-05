@@ -2,5 +2,5 @@
 session_start();
 $_SESSION["myusername"] = "";
 session_destroy();
-header("Location: quiz.php");
+header("Location: Quiz.php");
 ?>

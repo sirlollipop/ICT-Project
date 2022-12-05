@@ -205,7 +205,9 @@ echo $str_json;
         placeholder
       </div>
       <div class="modal-footer">
+
 	  <button type="submit" class="btn btn-primary" href="Quiz4.php" role="button">Next Page</button>
+
       </div>
     </div>
   </div>

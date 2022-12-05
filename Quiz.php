@@ -193,7 +193,9 @@
 	  <h5 class="modal-title" id="valiPalaute">feedback:</h5>
       </div>
       <div class="modal-footer">
+
 	  	<button type="submit" class="btn btn-primary" href="Quiz2.php" role="button">Next Page</button>
+
       </div>
     </div>
   </div>

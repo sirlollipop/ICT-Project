@@ -14,17 +14,13 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-
-
-
-
 $sql = "SELECT quizid, score1 FROM category1";	
 $result =mysqli_query($conn, $sql);
 
 $user_num = "SELECT MAX(quizid) FROM category1";
 $user_result =mysqli_query($conn, $user_num);
 
-$avg_xy = "SELECT AVG(score1), AVG(score2) FROM category1";
+$avg_xy = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category1";
 $avg_result =mysqli_query($conn, $avg_xy);
 
 if ($result->num_rows > 0) {
@@ -39,23 +35,6 @@ if ($result->num_rows > 0) {
 } else {
   echo "0 results";
 }
-
-while($row = $avg_result->fetch_assoc()) {
- //echo "Average score: "  . $row["AVG(score)"];
-
-
-$_SESSION["Score1"] = $row["AVG(score1)"];
-$_SESSION["Score2"] = $row["AVG(score2)"]; 
-
-
-}
-  
-
- 
-  
-  
- 
-
 
 $conn->close();
 ?>
@@ -92,6 +71,41 @@ $conn->close();
 	  <div class="col-12 d-flex justify-content-center">
             <h2>Average results</h2>
         </div>
+		<?php
+		while($row = $avg_result->fetch_assoc()) {
+			 //echo "Average score: "  . $row["AVG(score)"];
+			$score1 = $row["AVG(score1)"];
+			$score2 = $row["AVG(score2)"];
+			$score3 = $row["AVG(score3)"];
+			$score4 = $row["AVG(score4)"];
+			$score5 = $row["AVG(score5)"];
+			$score6 = $row["AVG(score6)"];
+			$score7 = $row["AVG(score7)"];
+			$score8 = $row["AVG(score8)"];
+			$score9 = $row["AVG(score9)"];
+			$score10 = $row["AVG(score10)"];
+
+			echo "<table class='table'> <tr>";
+			echo " <th>Category</th>";
+			echo " <th>Communication</th>";
+			echo " <th>Analysis</th>";
+			echo " <th>Synthesis</th>";
+			echo " <th>Valuing</th>";
+			echo " <th>Execution</th>";
+			echo "</tr>";
+			echo "<tr><td> Substance </td>";
+			echo "<td>" . $score1 + $score2 . "</td>";
+			echo "<td>" . $score3 + $score4 . "</td>";
+			echo "<td>" . $score5 + $score6 . "</td>";
+			echo "<td>" . $score7 + $score8 . "</td>";
+			echo "<td>" . $score9 + $score10 . "</td> </tr>";
+			echo "</table>";
+			
+			$_SESSION["Score1"] = $row["AVG(score1)"];
+			$_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+		}
+		?>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
                 <p>Teacher who have just arrived from working life</p>

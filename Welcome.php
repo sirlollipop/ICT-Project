@@ -210,14 +210,22 @@ $conn->close();
                 <p>Teacher who have long career from working in school</p>
             </div>
         </div>
+		<div class="col- d-flex justify-content-center">
+            <canvas id="myChart2"></canvas>
+        </div>
 		
 	</div>
 	
 	<script>
         const ctx = document.getElementById('myChart');
+		const ctx2 = document.getElementById('myChart2');
         let numero1 = '<?php echo $_SESSION['Score1']; ?>';
         let numero2 = '<?php echo $_SESSION['Score2']; ?>';
-		
+		let cat1 ='<?php echo ($score1_1 + $score1_2 + $score2_1 + $score2_2 + $score3_1 + $score3_2 + $score4_1 + $score4_2)/8;?>';
+        let cat2 ='<?php echo ($score1_3 + $score1_4 + $score2_3 + $score2_4 + $score3_3 + $score3_4 + $score4_3 + $score4_4)/8;?>';
+        let cat3 ='<?php echo ($score1_5 + $score1_6 + $score2_5 + $score2_6 + $score3_5 + $score3_6 + $score4_5 + $score4_6)/8;?>';
+        let cat4 ='<?php echo ($score1_7 + $score1_8 + $score2_7 + $score2_8 + $score3_7 + $score3_8 + $score4_7 + $score4_8)/8;?>';
+        let cat5 ='<?php echo ($score1_9 + $score1_10 + $score2_9 + $score2_10 + $score3_9 + $score3_10 + $score4_9 + $score4_10)/8;?>';
 
 
             new Chart(ctx, {
@@ -248,6 +256,27 @@ $conn->close();
             }
             }
             );
+			new Chart(ctx2, {
+                type: 'radar',
+                data:  {
+                    labels: [
+                        'Communication',
+                        'Analysis',
+                        'Synthesis',
+                        'Valuing',
+                        'Executing',
+                         ],
+                    datasets:[{
+                        label: 'Average CASVE scores',
+                        data: [cat1, cat2, cat3, cat4, cat5],
+                        fill: true,
+                        backgroundColor: 'rgb(255, 99, 132)'
+                    }]
+                } ,
+                options: {
+                    responsive: true
+                }
+            });
 </script>
 
 

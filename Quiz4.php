@@ -14,7 +14,7 @@
 </head>
 <body>
 <script>
-	sessionStorage.setItem("sivu", 1);
+	sessionStorage.setItem("sivu", 4);
 </script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
@@ -46,7 +46,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -59,7 +59,7 @@
 				<p class="card-text">The career guidance I do is based on the educational guidance plan of the educational institution</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -73,7 +73,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -87,7 +87,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -101,7 +101,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -115,7 +115,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -129,7 +129,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -143,7 +143,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -157,7 +157,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -171,7 +171,7 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="25">
+				<input type="range" name="quiz" class="form-range"  step="33.33">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -195,7 +195,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="valiPalaute">
         placeholder
       </div>
       <div class="modal-footer">

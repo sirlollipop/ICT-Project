@@ -205,6 +205,5 @@
 </div>
 </div>
 <script src="calculator.js"></script>
-<script src="ValiPalaute.js"></script>
 </body>
 </html>

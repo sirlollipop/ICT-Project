@@ -24,21 +24,30 @@ if(sivunum==1){
 
         sessionStorage.setItem("All1", SessioSave);
         sessionStorage.setItem("Total1", quizScore);
-
+        var FullScore = sessionStorage.getItem("Total1");
+        sessionStorage.setItem("FullScore", FullScore);
         
 }
 else if(sivunum==2){
         sessionStorage.setItem("All2", SessioSave);
-        sessionStorage.setItem("Total2", quizScore);
+        sessionStorage.setItem("Total2", Score2);
+        var FullScore = FullScore += quizScore
+        console.log(FullScore);
+        sessionStorage.setItem("FullScore", FullScore);
+        
 }
 else if(sivunum==3){
-        
+        console.log(quizScore)
         sessionStorage.setItem("All3", SessioSave);
         sessionStorage.setItem("Total3", quizScore);
+        var FullScore = FullScore += quizScore
+        sessionStorage.setItem("FullScore", FullScore);
 }
 else if(sivunum==4){
         sessionStorage.setItem("All4", SessioSave);
         sessionStorage.setItem("Total4", quizScore);
+        var FullScore = FullScore += quizScore
+        sessionStorage.setItem("FullScore", FullScore);
 }
 return quizScore;
 };
@@ -114,18 +123,19 @@ function valiPalaute4()
 function getTotal()
 {
 var totalScore = getScore();
+totalScore = sessionStorage.getItem("FullScore");
 var sivunum = sessionStorage.getItem("sivu");
 if(sivunum==1){
         valiPalaute1();
 }
-if(sivunum==2){
+else if(sivunum==2){
         console.log(sivunum);
         valiPalaute2();
 }
-if(sivunum==3){
+else if(sivunum==3){
         valiPalaute3();
 }
-if(sivunum==4){
+else if(sivunum==4){
         valiPalaute4();
 }
 

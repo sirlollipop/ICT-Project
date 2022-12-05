@@ -14,7 +14,7 @@
 </head>
 <body>
 <script>
-	sessionStorage.setItem("sivu", 1);
+	sessionStorage.setItem("sivu", 2);
 </script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
@@ -192,7 +192,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body" id="valiPalaute">
         placeholder
       </div>
       <div class="modal-footer">

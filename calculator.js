@@ -4,7 +4,7 @@ numericalValues["0"]= 1;
 numericalValues["33.33"]= 2;
 numericalValues["66.66"]= 3;
 numericalValues["99.99"]= 4;
-
+var FullScore = 0;
 
 
 function getScore()
@@ -24,15 +24,13 @@ if(sivunum==1){
 
         sessionStorage.setItem("All1", SessioSave);
         sessionStorage.setItem("Total1", quizScore);
-        var FullScore = sessionStorage.getItem("Total1");
+        FullScore = sessionStorage.getItem("Total1");
         sessionStorage.setItem("FullScore", FullScore);
-        
 }
 else if(sivunum==2){
         sessionStorage.setItem("All2", SessioSave);
-        sessionStorage.setItem("Total2", Score2);
-        var FullScore = FullScore += quizScore
-        console.log(FullScore);
+        sessionStorage.setItem("Total2", quizScore);
+        FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
         
 }
@@ -40,13 +38,13 @@ else if(sivunum==3){
         console.log(quizScore)
         sessionStorage.setItem("All3", SessioSave);
         sessionStorage.setItem("Total3", quizScore);
-        var FullScore = FullScore += quizScore
+        FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
 }
 else if(sivunum==4){
         sessionStorage.setItem("All4", SessioSave);
         sessionStorage.setItem("Total4", quizScore);
-        var FullScore = FullScore += quizScore
+        FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
 }
 return quizScore;
@@ -74,7 +72,7 @@ function valiPalaute2()
 {
         var number = (sessionStorage.getItem("Total2"))
         var palaute = ''
-        console.log(sessionStorage.getItem("All2"))
+        console.log(sessionStorage.getItem("FullScore"))
         console.log(sessionStorage.getItem("Total2"))
     if (number <=40) {
             palaute = '2I am a career guidance professional. I recognize the strengths of students that I leverage in my career planning. I make sure my students regularly accumulate their career planning skills. I have guidance skills, practices, and materials that I use to support workplace counselors. I regularly increase my career guidance skills. I am also happy to guide colleagues in career guidance skills. '
@@ -125,6 +123,7 @@ function getTotal()
 var totalScore = getScore();
 totalScore = sessionStorage.getItem("FullScore");
 var sivunum = sessionStorage.getItem("sivu");
+console.log(sessionStorage.getItem("FullScore"))
 if(sivunum==1){
         valiPalaute1();
 }
@@ -144,6 +143,7 @@ else if(sivunum==4){
 document.getElementById('result').innerHTML =
                               "Your total score is: "+totalScore;                           
 
-}
+};
+
 
 document.getElementById('calculate').onclick=getTotal;

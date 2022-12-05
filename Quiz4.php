@@ -199,7 +199,7 @@
         placeholder
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="End.php" role="button">Chart</a>
+	  	<a class="btn btn-primary" href="End.php" id="finalSubmit" role="button">Chart</a>
       </div>
     </div>
   </div>

@@ -13,9 +13,9 @@
 	
 </head>
 <body>
-<?php
-
-?>
+<script>
+	sessionStorage.setItem("sivu", 1);
+</script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
 	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>

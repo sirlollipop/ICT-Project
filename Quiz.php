@@ -35,7 +35,7 @@
 	
 
 		<div class="card text-center border-0">
-		<form name="form" action="#">
+		<form name="form" action="Quiz2.php" method="POST">
 		<h5 class="card-header border-0">Substance</h5>
 		<div class= "card-body category1">
 			
@@ -193,7 +193,7 @@
 	  <h5 class="modal-title" id="valiPalaute">feedback:</h5>
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz2.php" role="button">Next Page</a>
+	  	<button type="submit" class="btn btn-primary" href="Quiz2.php" role="button">Next Page</button>
       </div>
     </div>
   </div>

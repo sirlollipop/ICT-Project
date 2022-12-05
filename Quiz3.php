@@ -1,3 +1,7 @@
+<?php
+$str_json = file_get_contents('php://input');
+echo $str_json;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +41,7 @@
 
 		<div class="card text-center border-0">
 
-		<form name="form" action="#">
+		<form name="form" action="Quiz4.php" method="POST">
 		<h5 class="card-header border-0">Studification and development of skills</h5>
 
 		<div class= "card-body category1">
@@ -201,7 +205,7 @@
         placeholder
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz4.php" role="button">Next Page</a>
+	  <button type="submit" class="btn btn-primary" href="Quiz4.php" role="button">Next Page</button>
       </div>
     </div>
   </div>

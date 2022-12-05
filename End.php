@@ -1,10 +1,11 @@
+
 <?php
 session_start();
 ?>
 <?php
-// Set session variables
-$_SESSION["Score1"] = 20;
-$_SESSION["Score2"] = 60;
+include "Config.php";
+$str_json = file_get_contents('php://input');
+
 ?>
 
 <!DOCTYPE html>
@@ -126,9 +127,10 @@ $_SESSION["Score2"] = 60;
         var question4_8 = parseInt(category4[7]);
         var question4_9 = parseInt(category4[8]);
         var question4_10 = parseInt(category4[9]);
-
+        
 
         let numero2 = parseInt(sessionStorage.getItem("FullScore"));
+
 
 
             new Chart(ctx, {

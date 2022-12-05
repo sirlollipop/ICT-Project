@@ -1,5 +1,5 @@
 <?php
-	include("config.php");
+	include("Config.php");
    session_start();
    if (!empty($_SESSION["myusername"])) {
 		header("location: Welcome.php");

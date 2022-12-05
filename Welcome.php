@@ -6,7 +6,7 @@ session_start();
 if (empty($_SESSION["myusername"])) {
     header("location: Login.php");
 }
-include("config.php");
+include("Config.php");
 
 $conn = $db;
 

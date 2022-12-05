@@ -26,12 +26,24 @@ if(sivunum==1){
         sessionStorage.setItem("Total1", quizScore);
         FullScore = sessionStorage.getItem("Total1");
         sessionStorage.setItem("FullScore", FullScore);
+        var str_json = JSON.stringify(SessioSave);
+        console.log(str_json)
+        request= new XMLHttpRequest();
+        request.open("POST", "Quiz2.php", true);
+        request.setRequestHeader("Content-type", "application/json");
+        request.send(str_json);
+
 }
 else if(sivunum==2){
         sessionStorage.setItem("All2", SessioSave);
         sessionStorage.setItem("Total2", quizScore);
         FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
+        var str_json = JSON.stringify(SessioSave);
+        request= new XMLHttpRequest();
+        request.open("POST", "Quiz3.php", true);
+        request.setRequestHeader("Content-type", "application/json");
+        request.send(str_json);
         
 }
 else if(sivunum==3){
@@ -40,13 +52,24 @@ else if(sivunum==3){
         sessionStorage.setItem("Total3", quizScore);
         FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
+        var str_json = JSON.stringify(SessioSave);
+        request= new XMLHttpRequest();
+        request.open("POST", "Quiz4.php", true);
+        request.setRequestHeader("Content-type", "application/json");
+        request.send(str_json);
 }
 else if(sivunum==4){
         sessionStorage.setItem("All4", SessioSave);
         sessionStorage.setItem("Total4", quizScore);
         FullScore = quizScore + parseInt(sessionStorage.getItem("FullScore"));
         sessionStorage.setItem("FullScore", FullScore);
+        var str_json = JSON.stringify(SessioSave);
+        request= new XMLHttpRequest();
+        request.open("POST", "End.php", true);
+        request.setRequestHeader("Content-type", "application/json");
+        request.send(str_json);
 }
+
 return quizScore;
 };
  

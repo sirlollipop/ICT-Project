@@ -1,3 +1,7 @@
+<?php
+$str_json = file_get_contents('php://input');
+echo $str_json;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +41,7 @@
 
 
 		<div class="card text-center border-0">
-	  <form name="form" action="#">
+	  <form name="form" action="End.php" method="POST">
 		<h5 class="card-header border-0">Guidance and collaboration in different environments</h5>
 
 		<div class= "card-body category1">
@@ -199,7 +203,7 @@
         placeholder
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="End.php" id="finalSubmit" role="button">Chart</a>
+	  <button type="submit" class="btn btn-primary" href="End.php" role="button">Next Page</button>
       </div>
     </div>
   </div>

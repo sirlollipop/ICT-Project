@@ -4,9 +4,9 @@ session_start();
 ?>
 <?php
 if (empty($_SESSION["myusername"])) {
-    header("location: Login.php");
+    header("location: login.php");
 }
-include("Config.php");
+include("config.php");
 
 $conn = $db;
 
@@ -67,7 +67,7 @@ $conn->close();
 
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="Quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
@@ -219,8 +219,16 @@ $conn->close();
 	<script>
         const ctx = document.getElementById('myChart');
 		const ctx2 = document.getElementById('myChart2');
-        let numero1 = '<?php echo $_SESSION['Score1']; ?>';
-        let numero2 = '<?php echo $_SESSION['Score2']; ?>';
+        let numero1 = '<?php echo (($score1_1 + $score1_2 + $score1_3 + $score1_4 + $score1_5 + $score1_6 + $score1_7 + $score1_8 + $score1_9 + $score1_10 +
+									$score2_1 + $score2_2 + $score2_3 + $score2_4 + $score2_5 + $score2_6 + $score2_7 + $score2_8 + $score2_9 + $score2_10) - 
+									($score3_1 + $score3_2 + $score3_3 + $score3_4 + $score3_5 + $score3_6 + $score3_7 + $score3_8 + $score3_9 + $score3_10 +
+									$score4_1 + $score4_2 + $score4_3 + $score4_4 + $score4_5 + $score4_6 + $score4_7 + $score4_8 + $score4_9 + $score4_10)) ?>';
+
+        let numero2 = '<?php echo  (($score1_1 + $score1_2 + $score1_3 + $score1_4 + $score1_5 + $score1_6 + $score1_7 + $score1_8 + $score1_9 + $score1_10 +
+									$score2_1 + $score2_2 + $score2_3 + $score2_4 + $score2_5 + $score2_6 + $score2_7 + $score2_8 + $score2_9 + $score2_10 +
+									$score3_1 + $score3_2 + $score3_3 + $score3_4 + $score3_5 + $score3_6 + $score3_7 + $score3_8 + $score3_9 + $score3_10 +
+									$score4_1 + $score4_2 + $score4_3 + $score4_4 + $score4_5 + $score4_6 + $score4_7 + $score4_8 + $score4_9 + $score4_10))?>';
+
 		let cat1 ='<?php echo ($score1_1 + $score1_2 + $score2_1 + $score2_2 + $score3_1 + $score3_2 + $score4_1 + $score4_2)/8;?>';
         let cat2 ='<?php echo ($score1_3 + $score1_4 + $score2_3 + $score2_4 + $score3_3 + $score3_4 + $score4_3 + $score4_4)/8;?>';
         let cat3 ='<?php echo ($score1_5 + $score1_6 + $score2_5 + $score2_6 + $score3_5 + $score3_6 + $score4_5 + $score4_6)/8;?>';

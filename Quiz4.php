@@ -201,8 +201,7 @@ $str_json = file_get_contents('php://input');
       </div>
       <div class="modal-body text-left">
 	  <h5 class="modal-title">Feedback</h5>
-	  <div class="modal-body" id="valiPalaute">feedback:>
-      </div>
+	  <div class="modal-body" id="valiPalaute">feedback:</div>
       </div>
       <div class="modal-footer">
 	  <button type="submit" class="btn btn-primary" href="End.php" role="button">Next Page</button>

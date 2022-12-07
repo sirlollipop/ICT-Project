@@ -33,10 +33,14 @@
     <div class="container d-flex justify-content-center w-100 h-100">
         <div class="row align-items-center h-100">
             <div class="card text-center border-0">
-            <H3>Start your Quiz</H3>
+            <H3>Start Quiz</H3>
+			<p></p>
             <a href="Quiz.php" class="stretched-link"></a>
             </div>
         </div>
     </div>
+	<div class="text-center">
+    		<p>Ohjeet:</p>
+		</div>
 </body>
 </html>

@@ -65,10 +65,10 @@ $str_json = file_get_contents('php://input');
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who has had a long career working in private enterprises</p>
+                <p>Teacher who has a long career working in enterprises</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who has had a long career working in schools</p>
+                <p>Teacher who has a long career working in schools</p>
             </div>
         </div>
 	</div>

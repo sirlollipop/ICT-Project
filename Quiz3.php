@@ -1,3 +1,7 @@
+<?php
+$str_json = file_get_contents('php://input');
+//echo $str_json;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +17,9 @@
 	
 </head>
 <body>
-<?php
-
-?>
+<script>
+	sessionStorage.setItem("sivu", 3);
+</script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
 	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
@@ -34,20 +38,25 @@
 			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%"></div>
 		</div>
 	
+
 		<div class="card text-center border-0">
 
-		<form action="#">
+		<form name="form" action="Quiz4.php" method="POST">
 		<h5 class="card-header border-0">Studification and development of skills</h5>
+
 		<div class= "card-body category1">
 			
 				<p class="card-text">I keep myself up to date about the development of the curriculum concerning my substance</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question1" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
+				<br>
+				<label for="checkbox1"> Does not concern </label>
+				    <input type="checkbox" id="checkbox1" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category1">
 			
@@ -55,23 +64,27 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question2" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox2"> Does not concern </label>
+				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category1">
+		<div class= "card-body category2">
 			
 				<p class="card-text">I recognize the strengths and weaknesses of my student in different learning environments</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question3" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox3"> Does not concern </label>
+				    <input type="checkbox" id="checkbox3" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category2">
 			
@@ -79,87 +92,101 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question4" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox4"> Does not concern </label>
+				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I co-operate with workplace instructors systematically to recognize the critical parts of their workflow concerning given students learning goals</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question5" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox5"> Does not concern </label>
+				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I have discussions regularly in my on-the-job-training network about the studification of work processes</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question6" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox6"> Does not concern </label>
+				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I have the ways and means to support my students' decision-making when planning on-the-job training as a part of one’s education path</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question7" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox7"> Does not concern </label>
+				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I actively discuss with my students about the future requirements of different jobs and substances so that they understand the meaning of on-the-job training for their career</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question8" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox8"> Does not concern </label>
+				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I have regular discussions with my students during on-the-job training about the contents of training and how it matches their studies</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question9" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox9"> Does not concern </label>
+				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I understand the value of individual learning path for my student’s workplace learning and make sure that it works also in on-the-job training</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question10" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox10"> Does not concern </label>
+				    <input type="checkbox" id="checkbox10" name="NoConcern" value="true"> 
 		</div>	
 <!-- Button trigger modal -->
 <div class="text-right">
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
+<button type="button" id="calculate" class="btn btn-primary" data-toggle="modal" data-target="#submitModal">
   Submit
 </button>
 
@@ -169,16 +196,20 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="submitModal">Your points</h5>
+	  <h5 class="modal-title" id="result">Your points</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        placeholder
+      <div class="modal-body text-left">
+	  <h5 class="modal-title">Feedback</h5>
+	  <div class="modal-body" id="valiPalaute">feedback:>
+      </div>
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz4.php" role="button">Next Page</a>
+
+	  <button type="submit" class="btn btn-primary" href="Quiz4.php" role="button">Next Page</button>
+
       </div>
     </div>
   </div>

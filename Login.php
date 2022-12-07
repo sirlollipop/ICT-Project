@@ -1,6 +1,9 @@
 <?php
-	include("config.php");
+	include("Config.php");
    session_start();
+   if (!empty($_SESSION["myusername"])) {
+		header("location: Welcome.php");
+	}
    $error = "";
 	if($_SERVER["REQUEST_METHOD"] == "POST") {
 	// username and password sent from form 
@@ -23,7 +26,7 @@
 			if($count == 1) {
 				$_SESSION['myusername'] = $myusername;
 			 
-				header("location: welcome.php");
+				header("location: Welcome.php");
 			}else {
 				$error = "Your Login Name or Password is invalid";
 				

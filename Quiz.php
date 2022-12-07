@@ -13,9 +13,9 @@
 	
 </head>
 <body>
-<?php
-
-?>
+<script>
+	sessionStorage.setItem("sivu", 1);
+</script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
 	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
@@ -35,40 +35,46 @@
 	
 
 		<div class="card text-center border-0">
-		<form action="#">
+		<form name="form" action="Quiz2.php" method="POST">
 		<h5 class="card-header border-0">Substance</h5>
 		<div class= "card-body category1">
 			
 			<p class="card-text">I systematically acquire information about the changes taking place in my professional field</p>	
 			<label for="no">Completely disagree</label>
 			<br class='d-md-none'/>
-			<input type="range" name="question1" class="form-range" min="1" max="4" value="0">
+			<input type="range" name="quiz" class="form-range" step="25">
 			<br class='d-md-none'/>
 			<label for="yes">Completely agree</label>
-
+			<br>
+				<label for="checkbox1"> Does not concern </label>
+				    <input type="checkbox" id="checkbox1" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category1">
 			
 				<p class="card-text">I take into account the feedback I receive in guiding learning in the workplace</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="question2" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox2"> Does not concern </label>
+				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category1">
+		<div class= "card-body category2">
 			
 				<p class="card-text">I have a comprehensive knowledge of the skills needs of my profession</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question3" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox3"> Does not concern </label>
+				    <input type="checkbox" id="checkbox3" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category2">
 			
@@ -76,82 +82,96 @@
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question4" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox4"> Does not concern </label>
+				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">My own role as a learning ambassador is clear to me</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question5" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox5"> Does not concern </label>
+				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category2">
+		<div class= "card-body category3">
 			
 				<p class="card-text">I can evaluate and reflect on my own supervision</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question6" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox6"> Does not concern </label>
+				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I can evaluate a student's professional (substantive) skills and so-called soft skills as well</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question7" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox7"> Does not concern </label>
+				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category4">
 			
 				<p class="card-text">I regularly update my own competence development plan</p>
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question8" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox8"> Does not concern </label>
+				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I regularly discuss with my supervisor about developing my own skills</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="question9" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox9"> Does not concern </label>
+				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
-		<div class= "card-body category3">
+		<div class= "card-body category5">
 			
 				<p class="card-text">I collaborate with workplaces in a way that develops my ability to act as a Learning Ambassador</p>
 				
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="question10" class="form-range" min="1" max="4" value="0">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
-			
+				<br>
+				<label for="checkbox10"> Does not concern </label>
+				    <input type="checkbox" id="checkbox10" name="NoConcern" value="true"> 
 		</div>
 <!-- Button trigger modal -->
 <div class="text-right">
@@ -169,11 +189,15 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body">
-        placeholder
+      <div class="modal-body text-left">
+	  <h5 class="modal-title">Feedback</h5>
+	  <div class="modal-body" id="valiPalaute">feedback:>
+      </div>
       </div>
       <div class="modal-footer">
-	  	<a class="btn btn-primary" href="quiz2.php" role="button">Next Page</a>
+
+	  	<button type="submit" class="btn btn-primary" href="Quiz2.php" role="button">Next Page</button>
+
       </div>
     </div>
   </div>

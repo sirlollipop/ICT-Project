@@ -1,10 +1,11 @@
+
 <?php
 session_start();
 ?>
 <?php
-// Set session variables
-$_SESSION["Score1"] = 20;
-$_SESSION["Score2"] = 60;
+include "Config.php";
+$str_json = file_get_contents('php://input');
+
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +36,7 @@ $_SESSION["Score2"] = 60;
 	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
 	</nav>
 	
-	<div class="container">
+<div class="container">
 	
 		<div class="progress" style="background-color:lightgray !important;">
 			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
@@ -45,14 +46,18 @@ $_SESSION["Score2"] = 60;
             <h2>Result</h2>
         </div>
         <div class="col-12 d-flex justify-content-center">
+            <h3>Final Score:&nbsp;</h3>
+            <h3 id="result"></h3>
+        </div>
+        <div class="col-12 d-flex justify-content-center">
             <p>Place holder for text which tells user that can he or she go forward to learning ambassador test</p>
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have just arrived from working life</p>
+                <p>My working life orientation is strong</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have just graduated from teaching school </p>
+                <p>My school life orientation is strong</p>
             </div>
         </div>
         <div class="col- d-flex justify-content-center">
@@ -60,17 +65,72 @@ $_SESSION["Score2"] = 60;
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in workplace</p>
+                <p>Teacher who has had a long career working in private enterprises</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in school</p>
+                <p>Teacher who has had a long career working in schools</p>
             </div>
         </div>
 	</div>
     <script>
         const ctx = document.getElementById('myChart');
-        let numero1 = '<?php echo $_SESSION['Score1']; ?>';
-        let numero2 = '<?php echo $_SESSION['Score2']; ?>';
+        var workingTotal = 0;
+        workingTotal -= parseInt(sessionStorage.getItem("Total1")) + parseInt(sessionStorage.getItem("Total2"));
+        var schoolTotal = parseInt(sessionStorage.getItem("Total3")) + parseInt(sessionStorage.getItem("Total4"));
+
+        let numero1 = workingTotal + schoolTotal;
+        var category1 = sessionStorage.getItem("All1");
+        var category2 = sessionStorage.getItem("All2");
+        var category3 = sessionStorage.getItem("All3");
+        var category4 = sessionStorage.getItem("All4");
+
+        var question1_1 = parseInt(category1[0]);
+        var question1_2 = parseInt(category1[1]);
+        var question1_3 = parseInt(category1[2]);
+        var question1_4 = parseInt(category1[3]);
+        var question1_5 = parseInt(category1[4]);
+        var question1_6 = parseInt(category1[5]);
+        var question1_7 = parseInt(category1[6]);
+        var question1_8 = parseInt(category1[7]);
+        var question1_9 = parseInt(category1[8]);
+        var question1_10 = parseInt(category1[9]);
+
+        var question2_1 = parseInt(category2[0]);
+        var question2_2 = parseInt(category2[1]);
+        var question2_3 = parseInt(category2[2]);
+        var question2_4 = parseInt(category2[3]);
+        var question2_5 = parseInt(category2[4]);
+        var question2_6 = parseInt(category2[5]);
+        var question2_7 = parseInt(category2[6]);
+        var question2_8 = parseInt(category2[7]);
+        var question2_9 = parseInt(category2[8]);
+        var question2_10 = parseInt(category2[9]);
+        
+        var question3_1 = parseInt(category3[0]);
+        var question3_2 = parseInt(category3[1]);
+        var question3_3 = parseInt(category3[2]);
+        var question3_4 = parseInt(category3[3]);
+        var question3_5 = parseInt(category3[4]);
+        var question3_6 = parseInt(category3[5]);
+        var question3_7 = parseInt(category3[6]);
+        var question3_8 = parseInt(category3[7]);
+        var question3_9 = parseInt(category3[8]);
+        var question3_10 = parseInt(category3[9]);
+
+        var question4_1 = parseInt(category4[0]);
+        var question4_2 = parseInt(category4[1]);
+        var question4_3 = parseInt(category4[2]);
+        var question4_4 = parseInt(category4[3]);
+        var question4_5 = parseInt(category4[4]);
+        var question4_6 = parseInt(category4[5]);
+        var question4_7 = parseInt(category4[6]);
+        var question4_8 = parseInt(category4[7]);
+        var question4_9 = parseInt(category4[8]);
+        var question4_10 = parseInt(category4[9]);
+        
+
+        let numero2 = parseInt(sessionStorage.getItem("FullScore"));
+
 
 
             new Chart(ctx, {
@@ -85,16 +145,55 @@ $_SESSION["Score2"] = 60;
                 },
                 options: {
                     responsive: true,
+                    elements:{
+                        line: {
+                        backgroundColor: "red",
+                        borderWidth: 4,
+                    },
+                    },
                     scales: {
                 y: {
+                    ticks: {
+                        display: false,
+                    },
+                    grid: {
+                        color: (context) => {
+                            if(context.tick.value == 0){
+                                return "black";
+                            }
+                            else{
+                                return "rgb(179, 179, 179)";
+                            }
+                        }
+                        
+                        
+                    },
+ 
                     position:"center",
-                    min: -100,
-                    max: 100,
+                    min: 0,
+                    max: 161,
+                    
                     },
                 x: {
-                    position:"center",
+                    ticks: {
+                        display: false,
+                    },
+                    grid: {
+                        color: (context) => {
+                            if(context.tick.value == 0){
+                                return "black";
+                            }
+                            else{
+                                return "rgb(102, 204, 255)";
+                            }
+                        }
+                        
+                        
+                    },
+                    
                     min: -100,
                     max: 100,
+                    
                     }
                 }
                 
@@ -102,5 +201,14 @@ $_SESSION["Score2"] = 60;
             }
             );
 </script>
+<script>
+    function finalScore(){
+        totalScore = sessionStorage.getItem("FullScore");
+        document.getElementById('result').innerHTML =
+                              totalScore;
+}
+    finalScore();
+</script>
+
 </body>
 </html>

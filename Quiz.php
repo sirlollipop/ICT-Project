@@ -46,7 +46,6 @@
 			<br class='d-md-none'/>
 			<label for="yes">Completely agree</label>
 			<br>
-      
 				<label for="checkbox1"> Does not concern </label>
 				    <input type="checkbox" id="checkbox1" name="NoConcern" value="true"> 
 		</div>
@@ -60,7 +59,6 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox2"> Does not concern </label>
 				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
@@ -75,9 +73,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox3"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox3" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category2">
@@ -91,9 +87,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox4"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category3">
@@ -107,9 +101,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox5"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category3">
@@ -123,9 +115,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox6"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category4">
@@ -139,9 +129,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox7"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category4">
@@ -155,9 +143,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox8"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category5">
@@ -169,9 +155,7 @@
 				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox9"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category5">
@@ -186,9 +170,7 @@
 
 				<label for="yes">Completely agree</label>
 				<br>
-
 				<label for="checkbox10"> Does not concern </label>
-
 				    <input type="checkbox" id="checkbox10" name="NoConcern" value="true"> 
 		</div>
 <!-- Button trigger modal -->
@@ -207,11 +189,9 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-
       <div class="modal-body text-left">
 	  <h5 class="modal-title">Feedback</h5>
 	  <div class="modal-body" id="valiPalaute">feedback:</div>
-
       </div>
       <div class="modal-footer">
 

@@ -50,7 +50,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -64,7 +64,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -78,7 +78,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -92,7 +92,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -106,7 +106,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -120,7 +120,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -134,7 +134,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -148,7 +148,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -162,7 +162,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -176,7 +176,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>

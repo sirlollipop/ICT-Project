@@ -49,7 +49,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 				<label for="yes">Completely agree</label>                
 				<br>
@@ -62,7 +62,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -77,7 +77,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -91,7 +91,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -104,7 +104,7 @@ echo $str_json;
 				<p class="card-text">I can encourage jobs to see students as the future and to see the importance of workplace learning for the company</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -117,7 +117,7 @@ echo $str_json;
 				<p class="card-text">I seek to find new ways to guide learning in the workplace and to include it in the discussion in the workplace</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range"  step="33.33">
+				<input type="range" name="quiz" class="form-range"  step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -131,7 +131,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -145,7 +145,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -159,7 +159,7 @@ echo $str_json;
 				<label for="no">Completely disagree</label>
 
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>
@@ -172,7 +172,7 @@ echo $str_json;
 				<p class="card-text">I am well qualified to train workplace trainers</p>
 				<label for="no">Completely disagree</label>
 				<br class='d-md-none'/>
-				<input type="range" name="quiz" class="form-range" step="33.33">
+				<input type="range" name="quiz" class="form-range" step="25">
 				<br class='d-md-none'/>
 
 				<label for="yes">Completely agree</label>

@@ -1,6 +1,7 @@
 <?php
 $str_json = file_get_contents('php://input');
-echo $str_json;
+
+//echo $str_json;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +23,7 @@ echo $str_json;
 </script>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="StartPage.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
@@ -55,7 +56,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox1"> Does not concern </label>
+
+				<label for="checkbox1"> Does not concern </label>
 				    <input type="checkbox" id="checkbox1" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category1">
@@ -68,7 +70,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox2"> Does not concern </label>
+				<label for="checkbox2"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox2" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category2">
@@ -82,7 +85,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox3"> Does not concern </label>
+				<label for="checkbox3"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox3" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category2">
@@ -96,7 +100,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox4"> Does not concern </label>
+				<label for="checkbox4"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox4" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category3">
@@ -110,7 +115,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox5"> Does not concern </label>
+				<label for="checkbox5"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox5" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category3">
@@ -124,7 +130,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox6"> Does not concern </label>
+				<label for="checkbox6"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox6" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category4">
@@ -138,7 +145,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox7"> Does not concern </label>
+				<label for="checkbox7"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox7" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category4">
@@ -152,7 +160,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox8"> Does not concern </label>
+				<label for="checkbox8"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox8" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category5">
@@ -166,7 +175,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox9"> Does not concern </label>
+				<label for="checkbox9"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox9" name="NoConcern" value="true"> 
 		</div>
 		<div class= "card-body category5">
@@ -180,7 +190,8 @@ echo $str_json;
 
 				<label for="yes">Completely agree</label>
 				<br>
-				<lable for="checkbox10"> Does not concern </label>
+				<label for="checkbox10"> Does not concern </label>
+
 				    <input type="checkbox" id="checkbox10" name="NoConcern" value="true"> 
 		</div>
 <!-- Button trigger modal -->
@@ -199,8 +210,11 @@ echo $str_json;
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <div class="modal-body" id="valiPalaute">
-        placeholder
+
+      <div class="modal-body text-left">
+	  <h5 class="modal-title">Feedback</h5>
+	  <div class="modal-body" id="valiPalaute">feedback:</div>
+
       </div>
       <div class="modal-footer">
 	  <button type="submit" class="btn btn-primary" href="End.php" role="button">Next Page</button>

@@ -14,7 +14,8 @@ let valiPalauteLaskenta = function(result)
         console.log(number);
         console.log(palaute);
         document.getElementById('valiPalaute').innerHTML =
-                "Feedback: "+ palaute;
+                palaute;
+
 
 
 

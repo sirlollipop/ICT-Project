@@ -27,7 +27,7 @@ $str_json = file_get_contents('php://input');
 <body>
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="#"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="StartPage.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
@@ -36,7 +36,7 @@ $str_json = file_get_contents('php://input');
 	 <a id="loginlink" href="Login.php" style="color:black;">Admin login</a>
 	</nav>
 	
-	<div class="container">
+<div class="container">
 	
 		<div class="progress" style="background-color:lightgray !important;">
 			<div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
@@ -46,7 +46,8 @@ $str_json = file_get_contents('php://input');
             <h2>Result</h2>
         </div>
         <div class="col-12 d-flex justify-content-center">
-            <h3>Final Score: </h3>
+
+            <h3>Final Score:&nbsp;</h3>
             <h3 id="result"></h3>
         </div>
         <div class="col-12 d-flex justify-content-center">
@@ -65,10 +66,10 @@ $str_json = file_get_contents('php://input');
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in workplace</p>
+                <p>Teacher who has a long career working in enterprises</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in school</p>
+                <p>Teacher who has a long career working in schools</p>
             </div>
         </div>
 	</div>

@@ -67,7 +67,7 @@ $conn->close();
 
 	<!-- Navigointi palkki sivun yläosassa jossa Techvet logo -->
 	<nav class="navbar fixed-top navbar-dark bg-primary">
-	 <a class="navbar-brand" href="quiz.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
+	 <a class="navbar-brand" href="StartPage.php"><img src="NextSteps_at_TechVET_logo.png" width="100" class="d-inline-block align-top" alt=""></a>
 	</nav>
 	
 	<!-- Navigointi palkki pohjalla jossa Erasmus logo -->
@@ -193,10 +193,11 @@ $conn->close();
 		?>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have just arrived from working life</p>
+                <p>Teacher who has just arrived from working life</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have just graduated from teaching school </p>
+                <p>Teacher who has just graduated from teaching school </p>
+
             </div>
         </div>
         <div class="col- d-flex justify-content-center">
@@ -204,10 +205,11 @@ $conn->close();
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in workplace</p>
+                <p>Teacher who has had a long career working in enterprises</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who have long career from working in school</p>
+                <p>Teacher who has had a long career working in schools</p>
+
             </div>
         </div>
 		<div class="col- d-flex justify-content-center">

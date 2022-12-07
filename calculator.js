@@ -89,7 +89,9 @@ function valiPalaute1()
             palaute = 'I need more skills for individual career guidance. I find out about building individual career paths and how I promote my students ’career planning skills individually.  I find out what kind of career planning skills each of my student’s needs. '
         }
         document.getElementById('valiPalaute').innerHTML =
+
         palaute;
+
 };
 
 function valiPalaute2()
@@ -99,6 +101,7 @@ function valiPalaute2()
         console.log(sessionStorage.getItem("FullScore"))
         console.log(sessionStorage.getItem("Total2"))
     if (number <=40) {
+
             palaute = 'I am a career guidance professional. I quickly identify a suitable on-the-job learning location for my student. I have an extensive network of companies with which I work systematically. I have a clear plan for developing my own leadership skills. I regularly reflect on career guidance with colleagues, jobs, and students. I am actively exploring opportunities to study outside of school. I have a lot of different methods at my disposal to make decision making easier.  '
     }  if (number <=35){
             palaute = 'I reflect on my career supervision work every now and then. I have a few career guidance methods in use. For example, I think in advance every school year, for example, how I will renew my career guidance skills. I am asking for feedback from the workplace on my guidance. I am asking for feedback from the workplace on how I have managed to help them guide the student. I reflect on career guidance and fluency in decision-making with students.  '
@@ -115,6 +118,7 @@ function valiPalaute3()
     console.log(sessionStorage.getItem("All3"))
     console.log(sessionStorage.getItem("Total3"))
     if (number <=40) {
+
             palaute = 'I am a career guidance professional. I have a lot of different methods at my disposal for career guidance and decision making. I have a plan to increase my knowledge of career guidance methods. My work with workplace counselors is systematic and I keep a record of it. I also train and consult my colleagues on career guidance. I know the key theories of career guidance. I have the skills and plan to build students ’job search skills.   '
     } if (number <=35){
             palaute = 'I have a good range of career guidance methods at my disposal. I can identify students strengths. I have a strong background behind my career guidance, and I know the theory of career guidance. I know how I can develop students ’job search skills. I mentor workplace counselors regularly in their work with students. I am constantly exploring new on-the-job learning places. '
@@ -123,6 +127,7 @@ function valiPalaute3()
         }
         document.getElementById('valiPalaute').innerHTML =
         palaute;
+
 };
 function valiPalaute4()
 {
@@ -131,6 +136,7 @@ function valiPalaute4()
     console.log(sessionStorage.getItem("All4"))
     console.log(sessionStorage.getItem("Total4"))
     if (number <=40) {
+
             palaute = 'I am a skilled learning ambassador. I have a solid knowledge of companies in my area, and I know their skills needs. I have excellent skills in training job counselors. Utilizing feedback, I am constantly developing the career guidance that my students receive. I also have the enthusiasm, desire, and ability to help my colleagues develop as career counselors and learning ambassadors.  '
     } if (number <=35){
             palaute = 'I am aware of the needs of the companies in my area and the learning opportunities they offer. I use the information from feedback systems to develop my own career guidance skills. I have a good starting point to be a learning ambassador and I can identify development needs in my own skills and in cooperation between the educational institution and companies.  '
@@ -139,6 +145,7 @@ function valiPalaute4()
         }
         document.getElementById('valiPalaute').innerHTML =
 		palaute;
+
 };
 
 
@@ -152,6 +159,8 @@ if(sivunum==1){
         valiPalaute1();
 }
 else if(sivunum==2){
+
+
         valiPalaute2();
 }
 else if(sivunum==3){

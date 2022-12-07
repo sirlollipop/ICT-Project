@@ -46,6 +46,7 @@ $str_json = file_get_contents('php://input');
             <h2>Result</h2>
         </div>
         <div class="col-12 d-flex justify-content-center">
+
             <h3>Final Score:&nbsp;</h3>
             <h3 id="result"></h3>
         </div>

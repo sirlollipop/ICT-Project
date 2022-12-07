@@ -197,7 +197,6 @@ $conn->close();
             </div>
             <div class="col-6 d-flex justify-content-center">
                 <p>Teacher who has just graduated from teaching school </p>
-
             </div>
         </div>
         <div class="col- d-flex justify-content-center">
@@ -209,7 +208,6 @@ $conn->close();
             </div>
             <div class="col-6 d-flex justify-content-center">
                 <p>Teacher who has had a long career working in schools</p>
-
             </div>
         </div>
 		<div class="col- d-flex justify-content-center">

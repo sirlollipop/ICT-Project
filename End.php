@@ -46,7 +46,6 @@ $str_json = file_get_contents('php://input');
             <h2>Result</h2>
         </div>
         <div class="col-12 d-flex justify-content-center">
-
             <h3>Final Score:&nbsp;</h3>
             <h3 id="result"></h3>
         </div>
@@ -66,10 +65,10 @@ $str_json = file_get_contents('php://input');
         </div>
         <div class="row">
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who has a long career working in enterprises</p>
+                <p>Teacher who has had a long career working in enterprises</p>
             </div>
             <div class="col-6 d-flex justify-content-center">
-                <p>Teacher who has a long career working in schools</p>
+                <p>Teacher who has a had long career working in schools</p>
             </div>
         </div>
 	</div>

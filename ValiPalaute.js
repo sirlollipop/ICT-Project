@@ -19,6 +19,5 @@ let valiPalauteLaskenta = function(result)
 
 
 
-
 }
 document.getElementById('calculate').onclick=valiPalauteLaskenta; 

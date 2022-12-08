@@ -1,11 +1,102 @@
-
 <?php
 session_start();
-?>
-<?php
 include "Config.php";
+if ($db->connect_error) {
+  die("Connection failed: " . $db->connect_error);
+}
 $str_json = file_get_contents('php://input');
 
+$str = str_replace("quiz=", "", $str_json);
+$firstarray = explode("&", $str);
+//var_dump($firstarray);
+
+for($i = 0; $i < count($firstarray); $i++)
+{
+	if($firstarray[$i] == 0)
+	{
+		$firstarray[$i] = 1;
+	}
+	elseif($firstarray[$i] == 25)
+	{
+		$firstarray[$i] = 2;
+	}
+	elseif($firstarray[$i] == 75)
+	{
+		$firstarray[$i] = 3;
+	}
+	elseif($firstarray[$i] == 100)
+	{
+		$firstarray[$i] = 4;
+	}
+	elseif($firstarray[$i] == 50)
+	{
+		$firstarray[$i] = 0;
+	}
+}
+
+$q4_1 = intval($firstarray[0]);
+$q4_2 = intval($firstarray[1]);
+$q4_3 = intval($firstarray[2]);
+$q4_4 = intval($firstarray[3]);
+$q4_5 = intval($firstarray[4]);
+$q4_6 = intval($firstarray[5]);
+$q4_7 = intval($firstarray[6]);
+$q4_8 = intval($firstarray[7]);
+$q4_9 = intval($firstarray[8]);
+$q4_10 = intval($firstarray[9]);
+
+$q1_1 = $_SESSION["s1_1"];
+$q1_2 = $_SESSION["s1_2"];
+$q1_3 = $_SESSION["s1_3"];
+$q1_4 = $_SESSION["s1_4"];
+$q1_5 = $_SESSION["s1_5"];
+$q1_6 = $_SESSION["s1_6"];
+$q1_7 = $_SESSION["s1_7"];
+$q1_8 = $_SESSION["s1_8"];
+$q1_9 = $_SESSION["s1_9"];
+$q1_10 = $_SESSION["s1_10"];
+
+$q2_1 = $_SESSION["s2_1"];
+$q2_2 = $_SESSION["s2_2"];
+$q2_3 = $_SESSION["s2_3"];
+$q2_4 = $_SESSION["s2_4"];
+$q2_5 = $_SESSION["s2_5"];
+$q2_6 = $_SESSION["s2_6"];
+$q2_7 = $_SESSION["s2_7"];
+$q2_8 = $_SESSION["s2_8"];
+$q2_9 = $_SESSION["s2_9"];
+$q2_10 = $_SESSION["s2_10"];
+
+$q3_1 = $_SESSION["s3_1"];
+$q3_2 = $_SESSION["s3_2"];
+$q3_3 = $_SESSION["s3_3"];
+$q3_4 = $_SESSION["s3_4"];
+$q3_5 = $_SESSION["s3_5"];
+$q3_6 = $_SESSION["s3_6"];
+$q3_7 = $_SESSION["s3_7"];
+$q3_8 = $_SESSION["s3_8"];
+$q3_9 = $_SESSION["s3_9"];
+$q3_10 = $_SESSION["s3_10"];
+
+$sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
+ VALUES ('$q1_1', '$q1_2', '$q1_3', '$q1_4', '$q1_5', '$q1_6', '$q1_7', '$q1_8', '$q1_9', '$q1_10');";
+ 
+ $sql .= "INSERT INTO category2 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
+ VALUES ('$q2_1', '$q2_2', '$q2_3', '$q2_4', '$q2_5', '$q2_6', '$q2_7', '$q2_8', '$q2_9', '$q2_10');";
+ 
+ $sql .= "INSERT INTO category3 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
+ VALUES ('$q3_1', '$q3_2', '$q3_3', '$q3_4', '$q3_5', '$q3_6', '$q3_7', '$q3_8', '$q3_9', '$q3_10');";
+ 
+ $sql .= "INSERT INTO category4 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
+ VALUES ('$q4_1', '$q4_2', '$q4_3', '$q4_4', '$q4_5', '$q4_6', '$q4_7', '$q4_8', '$q4_9', '$q4_10');";
+ 
+// echo $sql;
+
+if ($db->multi_query($sql) === TRUE) {
+  echo "New records created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $db->error;
+}
 ?>
 
 <!DOCTYPE html>

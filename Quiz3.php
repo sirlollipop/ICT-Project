@@ -1,6 +1,55 @@
 <?php
+session_start();
 $str_json = file_get_contents('php://input');
-//echo $str_json;
+$str = str_replace("quiz=", "", $str_json);
+$firstarray = explode("&", $str);
+
+for($i = 0; $i < count($firstarray); $i++)
+{
+	if($firstarray[$i] == 0)
+	{
+		$firstarray[$i] = 1;
+	}
+	elseif($firstarray[$i] == 25)
+	{
+		$firstarray[$i] = 2;
+	}
+	elseif($firstarray[$i] == 75)
+	{
+		$firstarray[$i] = 3;
+	}
+	elseif($firstarray[$i] == 100)
+	{
+		$firstarray[$i] = 4;
+	}
+	elseif($firstarray[$i] == 50)
+	{
+		$firstarray[$i] = 0;
+	}
+}
+
+//var_dump($firstarray);
+$q2_1 = intval($firstarray[0]);
+$q2_2 = intval($firstarray[1]);
+$q2_3 = intval($firstarray[2]);
+$q2_4 = intval($firstarray[3]);
+$q2_5 = intval($firstarray[4]);
+$q2_6 = intval($firstarray[5]);
+$q2_7 = intval($firstarray[6]);
+$q2_8 = intval($firstarray[7]);
+$q2_9 = intval($firstarray[8]);
+$q2_10 = intval($firstarray[9]);
+
+$_SESSION["s2_1"] = $q2_1;
+$_SESSION["s2_2"] = $q2_2;
+$_SESSION["s2_3"] = $q2_3;
+$_SESSION["s2_4"] = $q2_4;
+$_SESSION["s2_5"] = $q2_5;
+$_SESSION["s2_6"] = $q2_6;
+$_SESSION["s2_7"] = $q2_7;
+$_SESSION["s2_8"] = $q2_8;
+$_SESSION["s2_9"] = $q2_9;
+$_SESSION["s2_10"] = $q2_10;
 ?>
 <!DOCTYPE html>
 <html lang="en">

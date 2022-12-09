@@ -300,6 +300,22 @@ if ($db->multi_query($sql) === TRUE) {
 }
     finalScore();
 </script>
-
+<script>
+function finalResult()
+{
+    var number = (sessionStorage.getItem("FullScore"))
+    var palaute = ''
+    if (number <=40) {
+            palaute = 'Final1'
+    } if (number <=35){
+            palaute = 'Final2 '
+    } if (number <=24){
+            palaute = 'Final3'
+        }
+        document.getElementById('valiPalaute').innerHTML =
+        "Feedback: "+ palaute;
+};
+finalResult();
+</script>
 </body>
 </html>

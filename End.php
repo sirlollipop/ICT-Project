@@ -91,6 +91,12 @@ $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, S
  VALUES ('$q4_1', '$q4_2', '$q4_3', '$q4_4', '$q4_5', '$q4_6', '$q4_7', '$q4_8', '$q4_9', '$q4_10');";
  
 // echo $sql;
+//Sending the sql to the database and executing it
+if ($db->multi_query($sql) === TRUE) {
+  //echo "New records created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $db->error;
+}
 ?>
 
 <!DOCTYPE html>

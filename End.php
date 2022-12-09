@@ -4,10 +4,23 @@ include "Config.php";
 if ($db->connect_error) {
   die("Connection failed: " . $db->connect_error);
 }
+
 $str_json = file_get_contents('php://input');
 
 $str = str_replace("quiz=", "", $str_json);
 $firstarray = explode("&", $str);
+
+$avg_xy = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category1";
+$avg_result =mysqli_query($db, $avg_xy);
+
+$avg_xy2 = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category2";
+$avg_result2 =mysqli_query($db, $avg_xy2);
+
+$avg_xy3 = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category3";
+$avg_result3 =mysqli_query($db, $avg_xy3);
+
+$avg_xy4 = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category4";
+$avg_result4 =mysqli_query($db, $avg_xy4);
 //var_dump($firstarray);
 
 for($i = 0; $i < count($firstarray); $i++)
@@ -78,6 +91,7 @@ $q3_8 = $_SESSION["s3_8"];
 $q3_9 = $_SESSION["s3_9"];
 $q3_10 = $_SESSION["s3_10"];
 
+
 $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
  VALUES ('$q1_1', '$q1_2', '$q1_3', '$q1_4', '$q1_5', '$q1_6', '$q1_7', '$q1_8', '$q1_9', '$q1_10');";
  
@@ -90,6 +104,85 @@ $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, S
  $sql .= "INSERT INTO category4 (Score1, Score2, Score3, Score4, Score5, Score6, Score7 ,Score8, Score9, Score10)
  VALUES ('$q4_1', '$q4_2', '$q4_3', '$q4_4', '$q4_5', '$q4_6', '$q4_7', '$q4_8', '$q4_9', '$q4_10');";
  
+
+ while($row = $avg_result->fetch_assoc()) {
+    //echo "Average score: "  . $row["AVG(score)"];
+   $score1_1 = $row["AVG(score1)"];
+   $score1_2 = $row["AVG(score2)"];
+   $score1_3 = $row["AVG(score3)"];
+   $score1_4 = $row["AVG(score4)"];
+   $score1_5 = $row["AVG(score5)"];
+   $score1_6 = $row["AVG(score6)"];
+   $score1_7 = $row["AVG(score7)"];
+   $score1_8 = $row["AVG(score8)"];
+   $score1_9 = $row["AVG(score9)"];
+   $score1_10 = $row["AVG(score10)"];
+
+
+   
+   $_SESSION["Score1"] = $row["AVG(score1)"];
+   $_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+}
+
+while($row = $avg_result2->fetch_assoc()) {
+    //echo "Average score: "  . $row["AVG(score)"];
+   $score2_1 = $row["AVG(score1)"];
+   $score2_2 = $row["AVG(score2)"];
+   $score2_3 = $row["AVG(score3)"];
+   $score2_4 = $row["AVG(score4)"];
+   $score2_5 = $row["AVG(score5)"];
+   $score2_6 = $row["AVG(score6)"];
+   $score2_7 = $row["AVG(score7)"];
+   $score2_8 = $row["AVG(score8)"];
+   $score2_9 = $row["AVG(score9)"];
+   $score2_10 = $row["AVG(score10)"];
+
+   
+   $_SESSION["Score1"] = $row["AVG(score1)"];
+   $_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+}
+
+while($row = $avg_result3->fetch_assoc()) {
+    //echo "Average score: "  . $row["AVG(score)"];
+   $score3_1 = $row["AVG(score1)"];
+   $score3_2 = $row["AVG(score2)"];
+   $score3_3 = $row["AVG(score3)"];
+   $score3_4 = $row["AVG(score4)"];
+   $score3_5 = $row["AVG(score5)"];
+   $score3_6 = $row["AVG(score6)"];
+   $score3_7 = $row["AVG(score7)"];
+   $score3_8 = $row["AVG(score8)"];
+   $score3_9 = $row["AVG(score9)"];
+   $score3_10 = $row["AVG(score10)"];
+
+
+
+   $_SESSION["Score1"] = $row["AVG(score1)"];
+   $_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+}
+
+while($row = $avg_result4->fetch_assoc()) {
+    //echo "Average score: "  . $row["AVG(score)"];
+   $score4_1 = $row["AVG(score1)"];
+   $score4_2 = $row["AVG(score2)"];
+   $score4_3 = $row["AVG(score3)"];
+   $score4_4 = $row["AVG(score4)"];
+   $score4_5 = $row["AVG(score5)"];
+   $score4_6 = $row["AVG(score6)"];
+   $score4_7 = $row["AVG(score7)"];
+   $score4_8 = $row["AVG(score8)"];
+   $score4_9 = $row["AVG(score9)"];
+   $score4_10 = $row["AVG(score10)"];
+
+  
+   
+   $_SESSION["Score1"] = $row["AVG(score1)"];
+   $_SESSION["Score2"] = $row["AVG(score2)"]; 
+
+}
 // echo $sql;
 ?>
 
@@ -192,6 +285,15 @@ $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, S
 
         let numero2 = parseInt(sessionStorage.getItem("FullScore"));
 
+        let avgx = '<?php echo (($score1_1 + $score1_2 + $score1_3 + $score1_4 + $score1_5 + $score1_6 + $score1_7 + $score1_8 + $score1_9 + $score1_10 +
+									$score2_1 + $score2_2 + $score2_3 + $score2_4 + $score2_5 + $score2_6 + $score2_7 + $score2_8 + $score2_9 + $score2_10) - 
+									($score3_1 + $score3_2 + $score3_3 + $score3_4 + $score3_5 + $score3_6 + $score3_7 + $score3_8 + $score3_9 + $score3_10 +
+									$score4_1 + $score4_2 + $score4_3 + $score4_4 + $score4_5 + $score4_6 + $score4_7 + $score4_8 + $score4_9 + $score4_10)) ?>';
+
+        let avgy = '<?php echo  (($score1_1 + $score1_2 + $score1_3 + $score1_4 + $score1_5 + $score1_6 + $score1_7 + $score1_8 + $score1_9 + $score1_10 +
+									$score2_1 + $score2_2 + $score2_3 + $score2_4 + $score2_5 + $score2_6 + $score2_7 + $score2_8 + $score2_9 + $score2_10 +
+									$score3_1 + $score3_2 + $score3_3 + $score3_4 + $score3_5 + $score3_6 + $score3_7 + $score3_8 + $score3_9 + $score3_10 +
+									$score4_1 + $score4_2 + $score4_3 + $score4_4 + $score4_5 + $score4_6 + $score4_7 + $score4_8 + $score4_9 + $score4_10))?>';
 
 
             new Chart(ctx, {
@@ -202,7 +304,13 @@ $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, S
                     data: [{x: numero1, y: numero2}],
                     backgroundColor: 'rgb(255, 99, 132)'
                     
-                }]
+                },
+                {
+                    label:'Average result',
+                    data: [{x: avgx, y: avgy}],
+                    backgroundColor: 'rgb(102, 204, 255)'
+                }
+                ]
                 },
                 options: {
                     responsive: true,

@@ -9,7 +9,6 @@ $str_json = file_get_contents('php://input');
 
 $str = str_replace("quiz=", "", $str_json);
 $firstarray = explode("&", $str);
-
 $avg_xy = "SELECT AVG(score1), AVG(score2), AVG(score3), AVG(score4), AVG(score5), AVG(score6), AVG(score7), AVG(score8), AVG(score9), AVG(score10) FROM category1";
 $avg_result =mysqli_query($db, $avg_xy);
 
@@ -47,16 +46,16 @@ for($i = 0; $i < count($firstarray); $i++)
 	}
 }
 
-$q4_1 = intval($firstarray[0]);
-$q4_2 = intval($firstarray[1]);
-$q4_3 = intval($firstarray[2]);
-$q4_4 = intval($firstarray[3]);
-$q4_5 = intval($firstarray[4]);
-$q4_6 = intval($firstarray[5]);
-$q4_7 = intval($firstarray[6]);
-$q4_8 = intval($firstarray[7]);
-$q4_9 = intval($firstarray[8]);
-$q4_10 = intval($firstarray[9]);
+$q4_1 = $firstarray[0];
+$q4_2 = $firstarray[1];
+$q4_3 = $firstarray[2];
+$q4_4 = $firstarray[3];
+$q4_5 = $firstarray[4];
+$q4_6 = $firstarray[5];
+$q4_7 = $firstarray[6];
+$q4_8 = $firstarray[7];
+$q4_9 = $firstarray[8];
+$q4_10 = $firstarray[9];
 
 $q1_1 = $_SESSION["s1_1"];
 $q1_2 = $_SESSION["s1_2"];
@@ -105,12 +104,6 @@ $sql = "INSERT INTO category1 (Score1, Score2, Score3, Score4, Score5, Score6, S
  VALUES ('$q4_1', '$q4_2', '$q4_3', '$q4_4', '$q4_5', '$q4_6', '$q4_7', '$q4_8', '$q4_9', '$q4_10')";
  
 // echo $sql;
-//Sending the sql to the database and executing it
-if ($db->multi_query($sql) === TRUE) {
-  //echo "New records created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . $db->error;
-}
 
  while($row = $avg_result->fetch_assoc()) {
     //echo "Average score: "  . $row["AVG(score)"];
@@ -446,5 +439,13 @@ function casveScore()
 };
 casveScore();
 </script>
+<?php
+//Sending the sql to the database and executing it
+if ($db->multi_query($sql)) {
+  echo "New records created successfully";
+} else {
+  echo "Error: " . $sql . "<br>" . $db->error;
+}
+?>
 </body>
 </html>

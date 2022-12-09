@@ -33,14 +33,15 @@
     <div class="container d-flex justify-content-center w-100 h-100">
         <div class="row align-items-center h-100">
             <div class="card text-center border-0">
-            <H3>Start Quiz</H3>
-			<p></p>
-            <a href="Quiz.php" class="stretched-link"></a>
+            
+            <a href="Quiz.php"><H3>Start Quiz</H3></a>
+			<p></br>By completing this test, you can self-assess your abilities to work as a learning ambassador.</br>The test includes four categories consisting of 10 questions each and is based on the CASVE model.</p>
+			<p>The slider works on a scale of completely disagree to completely agree, with the center of the slider being skip question.
             </div>
         </div>
     </div>
-	<div class="text-center">
-    		<p>Ohjeet:</p>
-		</div>
+	<div class="footer text-center">
+	<p>I give my consent for the NextSteps@TechVET project team to use my anonymous answers as research data and analyse the results to benefit the development of vocational education in partner countries</p>
+	</div>
 </body>
 </html>
